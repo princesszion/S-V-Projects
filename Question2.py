@@ -16,5 +16,5 @@ def main_func():
 if __name__ == "__main__":
     main_func() 
     
-    # Run the command " python -m memory_profiler example.py" on the terminal
+    # Run the command " python -m memory_profiler Question2.py" on the terminal
     # to see the space complexity analysis.
