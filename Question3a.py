@@ -12,3 +12,12 @@ new_string = output_string.lower()
 print("The randomly generated string is: " +output_string)
 print("The string converted to lower case is: " +new_string)
 
+# Sorting list if integers in ascending order
+ListsNumbers = [4, 56, 48, 200, 4, 2, 7, 4, 20, 34, 29]
+ListsNumbers.sort()
+print("The sorted list in ascending order is: " + str(ListsNumbers))
+
+# Sorting list if integers in descending order
+ListsNumbers = [4, 56, 48, 200, 4, 2, 7, 4, 20, 34, 29]
+ListsNumbers.sort(reverse = True)
+print("The sorted list in descending order is: " + str(ListsNumbers))
