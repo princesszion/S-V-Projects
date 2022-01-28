@@ -11,7 +11,7 @@ def values():
         input_strings = ''.join(random.SystemRandom().choice(string.ascii_letters + string.digits) for _ in range(20))
         i += 1
         Start_time = time.time()
-        input_size.append(input_strings)
+        input_size.append(len(input_strings))
         # print(input_strings)
         output_strings = input_strings.lower()
         End_time = time.time()
