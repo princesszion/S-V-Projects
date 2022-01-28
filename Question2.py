@@ -3,6 +3,7 @@ from line_profiler import LineProfiler
 import random
 
 
+# Measure of tracking the space used by an algorithm.
 def main_func():
 
     arr1 = [random.randint(1,5) for i in range(100000)]

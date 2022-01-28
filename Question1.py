@@ -1,3 +1,4 @@
+# measure of tracking the time taken to run an algorithm.
 import time
 Start_time = time.time()
 num1 = 127
