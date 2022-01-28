@@ -7,10 +7,11 @@ def spaceplot(inputs):
     input_size = []
     input_space = []
     for i in range(0, len(inputs)):
-        input_size.append(len(inputs[i]))
-        print(inputs[i])
+
         max(inputs[i])
         space = memory_usage()
+        input_size.append(len(inputs[i]))
+        print(inputs[i])
         input_space.append(space)
 
     print(input_space)
