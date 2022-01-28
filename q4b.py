@@ -1,5 +1,5 @@
 from memory_profiler import memory_usage
-
+import matplotlib.pyplot as plt
 
 
 
@@ -12,10 +12,17 @@ def spaceplot(inputs):
         space = memory_usage()
         input_size.append(len(inputs[i]))
         print(inputs[i])
-        input_space.append(space)
+        input_space.append(space[0])
 
-    print(input_space)
+
+    print('The memery_space is ' +str(input_space))
+    plt.plot(input_size, input_space)
+    plt.show()
 
 spaceplot([[1, 5], [12, 65, 24, 98, 45],
         [8,  65, 45],[12, 65, 24, 98, 45,  13, 23, 56, 78, 12, 65, 24, 98, 100, 45, 12, 65, 24,  13, 23, 56, 78, 12, 65, 24, 98, 100, 45, 12, 65, 24,  13, 23, 56, 78, 12, 65, 24, 98, 100, 45, 12, 65, 24,  13, 23, 56, 78, 12, 65, 24, 98, 100, 45, 12, 65, 24,  13, 23, 56, 78, 12, 65, 24, 98, 100, 45, 12, 65, 24]])
+from memory_profiler import memory_usage
+import matplotlib.pyplot as plt
+
+
 
