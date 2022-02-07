@@ -1,5 +1,6 @@
 #plot graph showing how the time and space taken as the input size changes from length 1 to length 100.
-
+from memory_profiler import memory_usage
+import matplotlib.pyplot as plt
 
 
 def spaceplot(inputs):
