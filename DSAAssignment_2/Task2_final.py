@@ -11,6 +11,7 @@ def check_duplicates():
 
 def get_k(distinct_numbers):
     input_k = int(input('Enter an integer k less than or equal to the length of list: '))
+    # Making sure that k is less than the length of the list.
     if int(input_k) > len(distinct_numbers):
         print("k should be less than or equal to the length of list")
         return get_k(distinct_numbers)
@@ -18,12 +19,14 @@ def get_k(distinct_numbers):
          return input_k, distinct_numbers, sum_largest_numbers(distinct_numbers, input_k)
 
 def sum_largest_numbers(distinct_numbers, input_k):
+
     distinct_numbers = [int(i) for i in distinct_numbers]
-    print(distinct_numbers)
+    print("The distinct lists is: " +str(distinct_numbers))
+    # Sorting the lists
     distinct_numbers.sort(reverse=True)
-    print(distinct_numbers)
+    print("The sorted list in descending order is: " +str(distinct_numbers))
     sum_the_numbers = sum(distinct_numbers[0:input_k])
-    print(sum_the_numbers)
+    print("The sum of the highest k numbers: " +str(sum_the_numbers))
 
 check_duplicates()
 
