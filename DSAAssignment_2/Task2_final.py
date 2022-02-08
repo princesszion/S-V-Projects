@@ -19,7 +19,6 @@ def get_k(distinct_numbers):
          return input_k, distinct_numbers, sum_largest_numbers(distinct_numbers, input_k)
 
 def sum_largest_numbers(distinct_numbers, input_k):
-
     distinct_numbers = [int(i) for i in distinct_numbers]
     print("The distinct lists is: " +str(distinct_numbers))
     # Sorting the lists
